@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xfc="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core"
+    x:Class="MedicsVerse.Resx.SmallDeviceStyle">
+
+    <OnPlatform x:Key="ColumnWidth"
+                x:TypeArguments="xfc:GridLength"
+                Android="42"
+                iOS="42" />
+
+    <OnPlatform x:Key="ColumnSpacing"
+                x:TypeArguments="x:Double"
+                Android="8"
+                iOS="8" />
+
+    <OnPlatform x:Key="RowSpacing"
+                x:TypeArguments="x:Double"
+                Android="6"
+                iOS="6" />
+
+    <OnPlatform x:Key="Micro"
+                x:TypeArguments="x:Double"
+                Android="8"
+                iOS="10" />
+
+    <OnPlatform x:Key="Mini"
+                x:TypeArguments="x:Double"
+                Android="10"
+                iOS="10" />
+
+    <OnPlatform x:Key="Small"
+                x:TypeArguments="x:Double"
+                Android="12"
+                iOS="12" />
+
+    <OnPlatform x:Key="Medium"
+                x:TypeArguments="x:Double"
+                Android="15"
+                iOS="15" />
+
+    <OnPlatform x:Key="Large"
+                x:TypeArguments="x:Double"
+                Android="18"
+                iOS="18" />
+
+    <OnPlatform x:Key="Body"
+                x:TypeArguments="x:Double"
+                Android="14"
+                iOS="14" />
+
+    <OnPlatform x:Key="SubTitle"
+                x:TypeArguments="x:Double"
+                Android="18"
+                iOS="18" />
+
+    <OnPlatform x:Key="Title"
+                x:TypeArguments="x:Double"
+                Android="20"
+                iOS="20" />
+
+    <OnPlatform x:Key="Header"
+                x:TypeArguments="x:Double"
+                Android="22"
+                iOS="22" />
+
+    <OnPlatform x:Key="Caption"
+                x:TypeArguments="x:Double"
+                Android="8"
+                iOS="8" />
+
+    <OnPlatform x:Key="KeyPadTextSize"
+                x:TypeArguments="x:Double"
+                Android="30"
+                iOS="30" />
+
+    <OnPlatform x:Key="ListIconSize"
+                x:TypeArguments="x:Double"
+                Android="28"
+                iOS="28" />
+
+    <OnPlatform x:Key="SmallIconSize"
+                x:TypeArguments="x:Double"
+                Android="13"
+                iOS="13" />
+
+    <OnPlatform x:Key="StatusHeight"
+                x:TypeArguments="x:Double"
+                Android="26"
+                iOS="26" />
+
+    <OnPlatform x:Key="KeyPadDimen"
+                x:TypeArguments="x:Double"
+                Android="38"
+                iOS="38" />
+
+    <OnPlatform x:Key="ButtonHeight"
+                x:TypeArguments="x:Double"
+                Android="35"
+                iOS="35" />
+
+    <OnIdiom x:Key="KPColumnSpacing"
+             x:TypeArguments="x:Double"
+             Phone="14"
+             Tablet="18" />
+
+
+    <Style x:Key="TopTabHeight" TargetType="Grid">
+        <Setter Property="RowDefinitions" Value="{OnIdiom Phone='50, *', Tablet='75, *'}" />
+    </Style>
+    <Style x:Key="TopTabSecurityHeight" TargetType="Grid">
+        <Setter Property="RowDefinitions" Value="{OnIdiom Phone='50, *, Auto', Tablet='75, *, Auto'}" />
+    </Style>
+
+</ResourceDictionary>
+

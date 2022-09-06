@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xfc="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core"
+    x:Class="MedicsVerse.Resx.GeneralDeviceStyle">
+
+    <OnPlatform x:Key="ColumnWidth"
+                    x:TypeArguments="xfc:GridLength"
+                    Android="52"
+                    iOS="52" />
+
+    <OnIdiom x:Key="ColumnSpacing"
+                x:TypeArguments="x:Double"
+                Phone="8"
+                Tablet="12" />
+
+    <OnIdiom x:Key="RowSpacing"
+                x:TypeArguments="x:Double"
+                Phone="4"
+                Tablet="6" />
+
+    <OnIdiom x:Key="Micro"
+                x:TypeArguments="x:Double"
+                Phone="{OnPlatform iOS='12',
+                                Default='10'}"
+                Tablet="{OnPlatform iOS='18',
+                                    Default='15'}" />
+
+    <OnIdiom x:Key="Mini"
+                x:TypeArguments="x:Double"
+                Phone="12"
+                Tablet="18" />
+
+    <OnIdiom x:Key="Small"
+                x:TypeArguments="x:Double"
+                Phone="14"
+                Tablet="21" />
+
+    <OnIdiom x:Key="Medium"
+                x:TypeArguments="x:Double"
+                Phone="17"
+                Tablet="25.5" />
+
+    <OnIdiom x:Key="Large"
+                x:TypeArguments="x:Double"
+                Phone="22"
+                Tablet="33" />
+
+    <OnIdiom x:Key="Body"
+                x:TypeArguments="x:Double"
+                Phone="{OnPlatform iOS='16',
+                                Default='16'}"
+                Tablet="{OnPlatform iOS='25.5',
+                                    Default='24'}" />
+
+    <OnIdiom x:Key="SubTitle"
+                x:TypeArguments="x:Double"
+                Phone="{OnPlatform iOS='22',
+                                Default='16'}"
+                Tablet="{OnPlatform iOS='33',
+                                    Default='24'}" />
+
+    <OnIdiom x:Key="Title"
+                x:TypeArguments="x:Double"
+                Phone="24"
+                Tablet="36" />
+
+    <OnIdiom x:Key="Header"
+                x:TypeArguments="x:Double"
+                Phone="26"
+                Tablet="39" />
+
+    <OnIdiom x:Key="Caption"
+                x:TypeArguments="x:Double"
+                Phone="12"
+                Tablet="18" />
+
+    <OnIdiom x:Key="KeyPadTextSize"
+                x:TypeArguments="x:Double"
+                Phone="42"
+                Tablet="64" />
+
+    <OnIdiom x:Key="ListIconSize"
+                x:TypeArguments="x:Double"
+                Phone="30"
+                Tablet="60" />
+
+    <OnIdiom x:Key="SmallIconSize"
+                x:TypeArguments="x:Double"
+                Phone="15"
+                Tablet="30" />
+
+    <OnIdiom x:Key="StatusHeight"
+                x:TypeArguments="x:Double"
+                Phone="26"
+                Tablet="39" />
+
+    <OnIdiom x:Key="KeyPadDimen"
+                x:TypeArguments="x:Double"
+                Phone="40"
+                Tablet="60" />
+
+    <OnPlatform x:Key="ButtonHeight"
+                x:TypeArguments="x:Double"
+                Android="40"
+                iOS="40" />
+
+    <OnIdiom x:Key="KPColumnSpacing"
+                x:TypeArguments="x:Double"
+                Phone="26"
+                Tablet="26" />
+
+    <Style x:Key="TopTabHeight" TargetType="Grid">
+        <Setter Property="RowDefinitions" Value="{OnIdiom Phone='50, *', Tablet='75, *'}" />
+    </Style>
+    <Style x:Key="TopTabSecurityHeight" TargetType="Grid">
+        <Setter Property="RowDefinitions" Value="{OnIdiom Phone='50, *, Auto', Tablet='75, *, Auto'}" />
+    </Style>
+
+</ResourceDictionary>
+

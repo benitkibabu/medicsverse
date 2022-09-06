@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.4" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Home\" />
+    <None Remove="Views\Home\Posts\" />
+    <None Remove="Views\Home\Notifications\" />
+    <None Remove="Views\Home\MyNetwork\" />
+    <None Remove="Views\Home\Jobs\" />
+    <None Remove="Views\Home\More\" />
+    <None Remove="Utils\" />
+    <None Remove="Helpers\" />
+    <None Remove="Views\Registers\" />
+    <None Remove="Views\Logins\" />
+    <None Remove="Views\Base\" />
+    <None Remove="Resx\" />
+    <None Remove="Xamarin.CommunityToolkit" />
+    <None Remove="CustomControls\" />
+    <None Remove="Xamarin.Forms.PancakeView" />
+    <None Remove="Services\" />
+    <None Remove="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Home\" />
+    <Folder Include="Views\Home\Posts\" />
+    <Folder Include="Views\Home\Notifications\" />
+    <Folder Include="Views\Home\MyNetwork\" />
+    <Folder Include="Views\Home\Jobs\" />
+    <Folder Include="Views\Home\More\" />
+    <Folder Include="Utils\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Views\Registers\" />
+    <Folder Include="Views\Logins\" />
+    <Folder Include="Views\Base\" />
+    <Folder Include="Resx\" />
+    <Folder Include="CustomControls\" />
+    <Folder Include="Services\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resx\StringRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resx\StringRes.Designer.cs">
+      <DependentUpon>StringRes.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

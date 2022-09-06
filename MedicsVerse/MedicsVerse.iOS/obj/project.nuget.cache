@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "wyEcEcd+l+mue1NLJVO5H6Xzfy/7gmpmmpe1wI4Wnvc6sN5JcB9NjPfI0xE8sXqh0D4R4Hy9otk3uOE6oXnGmQ==",
+  "success": true,
+  "projectFilePath": "/Users/benitkibabu/Documents/VSProject/MedicsVerse/MedicsVerse/MedicsVerse.iOS/MedicsVerse.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/benitkibabu/.nuget/packages/system.componentmodel/4.3.0/system.componentmodel.4.3.0.nupkg.sha512",
+    "/Users/benitkibabu/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/benitkibabu/.nuget/packages/xamarin.communitytoolkit/2.0.4/xamarin.communitytoolkit.2.0.4.nupkg.sha512",
+    "/Users/benitkibabu/.nuget/packages/xamarin.essentials/1.7.3/xamarin.essentials.1.7.3.nupkg.sha512",
+    "/Users/benitkibabu/.nuget/packages/xamarin.forms/5.0.0.2515/xamarin.forms.5.0.0.2515.nupkg.sha512",
+    "/Users/benitkibabu/.nuget/packages/xamarin.forms.pancakeview/2.3.0.759/xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
+  ],
+  "logs": []
+}
