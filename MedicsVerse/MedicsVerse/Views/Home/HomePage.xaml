@@ -12,12 +12,12 @@
 
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-            <Grid ColumnDefinitions="*,Auto,60"
+            <Grid ColumnDefinitions="*,Auto,48"
                   x:Name="ToolbarGrid"
                   AutomationId="Aut_ToolbarGrid"
                   Margin="16,16,16,0"
                   xct:CornerRadiusEffect.CornerRadius="20"
-                  HeightRequest="70"
+                  HeightRequest="80"
                   BackgroundColor="{StaticResource AccentLight}">
 
                 <SearchBar x:Name="SearchField"
@@ -47,10 +47,10 @@
                                 BorderColor="{StaticResource White}"
                                 Source="{Binding LoggedInUser.ImageUrl}"
                                 Margin="8"
-                                VerticalOptions="Center"
+                                VerticalOptions="CenterAndExpand"
                                 HorizontalOptions="Center"
-                                WidthRequest="30"
-                                HeightRequest="30"
+                                WidthRequest="32"
+                                HeightRequest="32"
                                 Grid.Column="2"/>
             </Grid>
 
@@ -152,7 +152,7 @@
 
                                         <Label x:Name="CommentCountLabel"
                                                AutomationId="Aut_CommentCountLabel"
-                                               Text="6"
+                                               Text="{Binding Comments}"
                                                VerticalOptions="Center"
                                                FontAttributes="Bold"
                                                FontSize="{StaticResource Small}"
@@ -168,7 +168,7 @@
 
                                         <Label x:Name="LikesCountLabel"
                                                AutomationId="Aut_LikesCountLabel"
-                                               Text="34"
+                                               Text="{Binding Likes}"
                                                VerticalOptions="Center"
                                                FontAttributes="Bold"
                                                FontSize="{StaticResource Small}"
