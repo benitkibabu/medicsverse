@@ -26,7 +26,7 @@ namespace MedicsVerse.Views.Home {
         private global::Xamarin.Forms.ImageButton ChatButton;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.CommunityToolkit.UI.Views.AvatarView AvatarIcon;
+        private global::Xamarin.Forms.Image AvatarIcon;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
@@ -34,7 +34,7 @@ namespace MedicsVerse.Views.Home {
             ToolbarGrid = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Grid>(this, "ToolbarGrid");
             SearchField = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.SearchBar>(this, "SearchField");
             ChatButton = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ImageButton>(this, "ChatButton");
-            AvatarIcon = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.CommunityToolkit.UI.Views.AvatarView>(this, "AvatarIcon");
+            AvatarIcon = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Image>(this, "AvatarIcon");
         }
     }
 }

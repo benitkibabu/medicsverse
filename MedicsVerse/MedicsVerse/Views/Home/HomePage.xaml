@@ -12,7 +12,7 @@
 
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-            <Grid ColumnDefinitions="*,Auto,48"
+            <Grid ColumnDefinitions="*,Auto,Auto"
                   x:Name="ToolbarGrid"
                   AutomationId="Aut_ToolbarGrid"
                   Margin="16,16,16,0"
@@ -41,17 +41,25 @@
                              xct:IconTintColorEffect.TintColor="{StaticResource White}"
                              Clicked="ChatButton_Clicked"/>
 
-                <xct:AvatarView x:Name="AvatarIcon"
-                                AutomationId="Aut_AvatarIcon"
-                                Text="{Binding LoggedInUser.Initials}"
-                                BorderColor="{StaticResource White}"
-                                Source="{Binding LoggedInUser.ImageUrl}"
-                                Margin="8"
-                                VerticalOptions="CenterAndExpand"
-                                HorizontalOptions="Center"
-                                WidthRequest="32"
-                                HeightRequest="32"
-                                Grid.Column="2"/>
+                <Grid Grid.Column="2"
+                      BackgroundColor="{StaticResource White}"
+                      Margin="8"
+                      Padding="1"
+                      VerticalOptions="Center"
+                      HorizontalOptions="Center"
+                      xct:CornerRadiusEffect.CornerRadius="25"
+                      WidthRequest="40"
+                      HeightRequest="40">
+
+                    <Image x:Name="AvatarIcon"
+                           AutomationId="Aut_AvatarIcon"
+                           Source="{Binding LoggedInUser.ImageUrl}"
+                           xct:CornerRadiusEffect.CornerRadius="25"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           Aspect="AspectFill"
+                           />
+                    </Grid>
             </Grid>
 
             <CollectionView ItemsSource="{Binding Posts}"
