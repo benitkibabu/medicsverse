@@ -4,6 +4,7 @@
 using System;
 using System.Collections.Generic;
 using MedicsVerse.Views.Base;
+using MedicsVerse.Views.Home;
 using MedicsVerse.Views.Registers;
 using Xamarin.Forms;
 
@@ -28,6 +29,7 @@ namespace MedicsVerse.Views.Logins
 
         void SignInButton_Tapped(System.Object sender, System.EventArgs e)
         {
+            Application.Current.MainPage = new AppShell();
         }
 
         void RegisterButton_Tapped(System.Object sender, System.EventArgs e)

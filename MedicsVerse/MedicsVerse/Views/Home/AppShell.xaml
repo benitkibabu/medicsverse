@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" 
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       xmlns:local="clr-namespace:MedicsVerse.Views"
+       xmlns:local="clr-namespace:MedicsVerse.Views.Home"
+       Style="{StaticResource BaseStyle}"
        Title="MedicsVerse"
        x:Class="MedicsVerse.Views.Home.AppShell">
 
@@ -11,28 +12,21 @@
         https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
     -->
 
-    <Shell.Resources>
+    <!--<Shell.Resources>
         <ResourceDictionary>
-            <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
-                <Setter Property="Shell.ForegroundColor" Value="Black" />
-                <Setter Property="Shell.TitleColor" Value="White" />
-                <Setter Property="Shell.DisabledColor" Value="Gray" />
-                <Setter Property="Shell.UnselectedColor" Value="Gray" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
-                <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource Accent}"/>
-                <Setter Property="Shell.TabBarUnselectedColor" Value="{StaticResource Gray}"/>
-                <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource Accent}"/>
-            </Style>
             <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
             <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
         </ResourceDictionary>
-    </Shell.Resources>
+    </Shell.Resources>-->
 
-    <!--<TabBar>
-        <ShellContent Title="About" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
-        <ShellContent Title="Browse" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
-    </TabBar>-->
+    <TabBar x:Name="MainTabbar" >
+        <ShellContent Title="Home" Icon="ic_home.png" ContentTemplate="{DataTemplate local:HomePage}" />
+        <ShellContent Title="My Network" Icon="ic_people_alt.png" ContentTemplate="{DataTemplate local:HomePage}" />
+        <ShellContent Title="Post" Icon="ic_add_circle.png" ContentTemplate="{DataTemplate local:HomePage}" />
+        <ShellContent Title="Notifications" Icon="ic_notifications.png" ContentTemplate="{DataTemplate local:HomePage}" />
+        <ShellContent Title="Jobs" Icon="ic_cases.png" ContentTemplate="{DataTemplate local:HomePage}" />
+        <!--<ShellContent Title="Browse" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />-->
+    </TabBar>
 
     <!--
         If you would like to navigate to this content you can do so by calling

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<base:BasePreLogin
+    xmlns:base="clr-namespace:MedicsVerse.Views.Base"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:panx="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    BackgroundColor="{StaticResource Accent}"
+    ios:Page.UseSafeArea="true"
+    x:Class="MedicsVerse.Views.Starting.SplashScreenPage">
+
+    <ContentPage.Content>
+        <Grid RowDefinitions="*,*,*">
+            <Grid HorizontalOptions="Center"
+                  Grid.Row="1"
+                  VerticalOptions="Center"
+                  HeightRequest="100"
+                  WidthRequest="100"
+              
+                  xct:CornerRadiusEffect.CornerRadius="50"
+                  xct:ShadowEffect.Color="{StaticResource White}"
+                  xct:ShadowEffect.Radius="50"
+                  BackgroundColor="{StaticResource White}">
+
+                <Image Source="ic_logo_clear"
+                       Margin="8"
+                       Grid.Row="0"
+                       WidthRequest="96"
+                       HeightRequest="96"
+                       HorizontalOptions="Center"
+                       Aspect="AspectFit" />
+
+                
+            </Grid>
+
+            <StackLayout Orientation="Vertical"
+                         Grid.Row="2"
+                         VerticalOptions="Center"
+                         Margin="16">
+
+                <ProgressBar Progress="0.5"
+                             x:Name="ProgressBar"
+                             AutomationId="Aut_ProgressBar"
+                             ProgressColor="{StaticResource White}"/>
+
+                <Label Text="Getting everything warmed up"
+                       Margin="16,8,16,16"
+                       HorizontalOptions="FillAndExpand"
+                       HorizontalTextAlignment="Center"
+                       FontSize="{StaticResource Small}"
+                       TextColor="{StaticResource White}"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</base:BasePreLogin>
+

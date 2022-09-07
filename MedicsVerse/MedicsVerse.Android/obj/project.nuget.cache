@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FDqyY5/PpUkuoxHHza556q0gt28+UadKzxk3kUQHHTlfAOcuE6/7gjzqn0fcPdloDDq8aS4D660uvWTb2xdZfA==",
+  "dgSpecHash": "wUqtvChq1kmyfHW1i3h7yH+DrJ24tKhiFcfxaPUP3tqB1xtJpe1qZ4s7U+OcK/snTT6R3HUHP4nuJZUk/zGR8g==",
   "success": true,
-  "projectFilePath": "/Users/benitkibabu/Documents/VSProject/MedicsVerse/MedicsVerse/MedicsVerse.Android/MedicsVerse.Android.csproj",
+  "projectFilePath": "/Users/benitkibabu/Documents/VSProject/medicsverse/MedicsVerse/MedicsVerse.Android/MedicsVerse.Android.csproj",
   "expectedPackageFiles": [
     "/Users/benitkibabu/.nuget/packages/system.componentmodel/4.3.0/system.componentmodel.4.3.0.nupkg.sha512",
     "/Users/benitkibabu/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",

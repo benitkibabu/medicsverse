@@ -8,9 +8,10 @@
     <Application.Resources>
         <ResourceDictionary x:Name="dictionary">
 
-            <Color x:Key="PrimaryDark">#DDDDDD</Color>
+            <Color x:Key="PrimaryDark">#FFFFFF</Color>
             <Color x:Key="Primary">#FFFFFF</Color>
             <Color x:Key="Accent">#33b960</Color>
+            <Color x:Key="AccentLight">#8833b960</Color>
             <Color x:Key="AccentDark">#199c56</Color>
             <Color x:Key="AccentDarker">#037e4b</Color>
             <Color x:Key="Gray">#666666</Color>
@@ -21,6 +22,20 @@
             <Color x:Key="White">#ffffff</Color>
             <Color x:Key="LighterGray">#EFEFEF</Color>
             <Color x:Key="ShadowGray">#FCFCFC</Color>
+
+            <Style x:Key="BaseStyle" TargetType="Shell">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.NavBarHasShadow" Value="False" />
+                <Setter Property="Shell.NavBarIsVisible" Value="False" />
+                <Setter Property="Shell.ForegroundColor" Value="{StaticResource Accent}" />
+                <Setter Property="Shell.TitleColor" Value="{StaticResource Accent}" />
+                <Setter Property="Shell.DisabledColor" Value="{StaticResource LightGray}" />
+                <Setter Property="Shell.UnselectedColor" Value="{StaticResource Accent}" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource White}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource White}" />
+                <Setter Property="Shell.TabBarUnselectedColor" Value="{StaticResource LightGray}" />
+                <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource Accent}" />
+            </Style>
 
             <Style TargetType="Button">
                 <Setter Property="TextColor" Value="White"></Setter>

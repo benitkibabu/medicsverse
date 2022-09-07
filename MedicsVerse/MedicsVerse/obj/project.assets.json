@@ -1057,11 +1057,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/benitkibabu/Documents/VSProject/MedicsVerse/MedicsVerse/MedicsVerse/MedicsVerse.csproj",
+      "projectUniqueName": "/Users/benitkibabu/Documents/VSProject/medicsverse/MedicsVerse/MedicsVerse/MedicsVerse.csproj",
       "projectName": "MedicsVerse",
-      "projectPath": "/Users/benitkibabu/Documents/VSProject/MedicsVerse/MedicsVerse/MedicsVerse/MedicsVerse.csproj",
+      "projectPath": "/Users/benitkibabu/Documents/VSProject/medicsverse/MedicsVerse/MedicsVerse/MedicsVerse.csproj",
       "packagesPath": "/Users/benitkibabu/.nuget/packages/",
-      "outputPath": "/Users/benitkibabu/Documents/VSProject/MedicsVerse/MedicsVerse/MedicsVerse/obj/",
+      "outputPath": "/Users/benitkibabu/Documents/VSProject/medicsverse/MedicsVerse/MedicsVerse/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/benitkibabu/.config/NuGet/NuGet.Config"
@@ -1121,7 +1121,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "/Users/benitkibabu/Library/Caches/VisualStudio/17.0/MSBuild/70066_3/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/Users/benitkibabu/Library/Caches/VisualStudio/17.0/MSBuild/13349_3/RuntimeIdentifierGraph.json"
       }
     }
   }

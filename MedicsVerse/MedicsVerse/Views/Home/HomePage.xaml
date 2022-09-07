@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<base:BaseLoggedIn
+    xmlns:base="clr-namespace:MedicsVerse.Views.Base"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:panx="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    BackgroundColor="{StaticResource White}"
+    ios:Page.UseSafeArea="true"
+    x:Class="MedicsVerse.Views.Home.HomePage">
+
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Grid ColumnDefinitions="*,Auto,60"
+                  x:Name="ToolbarGrid"
+                  AutomationId="Aut_ToolbarGrid"
+                  Margin="16,16,16,0"
+                  xct:CornerRadiusEffect.CornerRadius="20"
+                  HeightRequest="60"
+                  BackgroundColor="{StaticResource AccentLight}">
+
+                <SearchBar x:Name="SearchField"
+                           AutomationId="Aut_SearchField"
+                           Placeholder="Search"
+                           PlaceholderColor="{StaticResource DarkGray}"
+                           Margin="8"
+                           TextColor="{StaticResource Black}"
+                           HeightRequest="40"
+                           xct:CornerRadiusEffect.CornerRadius="20"
+                           BackgroundColor="{StaticResource LighterGray}"
+                           Grid.Column="0"/>
+
+                <ImageButton x:Name="ChatButton"
+                             AutomationId="Aut_ChatButton"
+                             Source="ic_chat"
+                             BackgroundColor="Transparent"
+                             Grid.Column="1"
+                             HeightRequest="30"
+                             WidthRequest="30"
+                             xct:IconTintColorEffect.TintColor="{StaticResource White}"
+                             Clicked="ChatButton_Clicked"/>
+
+                <xct:AvatarView x:Name="AvatarIcon"
+                                AutomationId="Aut_AvatarIcon"
+                                Text="MT"
+                                BorderColor="{StaticResource White}"
+                                Source="ic_person"
+                                Margin="8"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                WidthRequest="30"
+                                HeightRequest="30"
+                                Grid.Column="2"/>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</base:BaseLoggedIn>
+

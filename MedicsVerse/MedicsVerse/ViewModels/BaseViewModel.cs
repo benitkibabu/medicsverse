@@ -5,7 +5,6 @@ using System.Runtime.CompilerServices;
 
 using Xamarin.Forms;
 
-using MedicsVerse.Models;
 
 namespace MedicsVerse.ViewModels
 {

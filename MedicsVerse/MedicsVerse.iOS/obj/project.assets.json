@@ -1281,11 +1281,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/benitkibabu/Documents/VSProject/MedicsVerse/MedicsVerse/MedicsVerse.iOS/MedicsVerse.iOS.csproj",
+      "projectUniqueName": "/Users/benitkibabu/Documents/VSProject/medicsverse/MedicsVerse/MedicsVerse.iOS/MedicsVerse.iOS.csproj",
       "projectName": "MedicsVerse.iOS",
-      "projectPath": "/Users/benitkibabu/Documents/VSProject/MedicsVerse/MedicsVerse/MedicsVerse.iOS/MedicsVerse.iOS.csproj",
+      "projectPath": "/Users/benitkibabu/Documents/VSProject/medicsverse/MedicsVerse/MedicsVerse.iOS/MedicsVerse.iOS.csproj",
       "packagesPath": "/Users/benitkibabu/.nuget/packages/",
-      "outputPath": "/Users/benitkibabu/Documents/VSProject/MedicsVerse/MedicsVerse/MedicsVerse.iOS/obj/",
+      "outputPath": "/Users/benitkibabu/Documents/VSProject/medicsverse/MedicsVerse/MedicsVerse.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1300,8 +1300,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/benitkibabu/Documents/VSProject/MedicsVerse/MedicsVerse/MedicsVerse/MedicsVerse.csproj": {
-              "projectPath": "/Users/benitkibabu/Documents/VSProject/MedicsVerse/MedicsVerse/MedicsVerse/MedicsVerse.csproj"
+            "/Users/benitkibabu/Documents/VSProject/medicsverse/MedicsVerse/MedicsVerse/MedicsVerse.csproj": {
+              "projectPath": "/Users/benitkibabu/Documents/VSProject/medicsverse/MedicsVerse/MedicsVerse/MedicsVerse.csproj"
             }
           }
         }

@@ -1,4 +1,4 @@
-/Users/benitkibabu/Documents/VSProject/MedicsVerse/MedicsVerse/MedicsVerse.iOS/bin/iPhoneSimulator/Debug/MedicsVerse.iOS.exe
+/Users/benitkibabu/Documents/VSProject/medicsverse/MedicsVerse/MedicsVerse.iOS/bin/iPhoneSimulator/Debug/MedicsVerse.iOS.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/15.12.0.2/lib/mono/Xamarin.iOS/mscorlib.dll
 /Users/benitkibabu/.nuget/packages/xamarin.forms/5.0.0.2515/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/15.12.0.2/lib/mono/Xamarin.iOS/Facades/netstandard.dll
@@ -23,7 +23,7 @@
 /Users/benitkibabu/.nuget/packages/xamarin.forms/5.0.0.2515/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll
 /Users/benitkibabu/.nuget/packages/xamarin.forms/5.0.0.2515/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll
 /Users/benitkibabu/.nuget/packages/xamarin.communitytoolkit/2.0.4/lib/xamarinios10/Xamarin.CommunityToolkit.dll
-/Users/benitkibabu/Documents/VSProject/MedicsVerse/MedicsVerse/MedicsVerse/bin/Debug/netstandard2.0/MedicsVerse.dll
+/Users/benitkibabu/Documents/VSProject/medicsverse/MedicsVerse/MedicsVerse/bin/Debug/netstandard2.0/MedicsVerse.dll
 /Users/benitkibabu/.nuget/packages/xamarin.forms/5.0.0.2515/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll
 /Users/benitkibabu/.nuget/packages/xamarin.essentials/1.7.3/lib/xamarinios10/Xamarin.Essentials.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/15.12.0.2/lib/mono/Xamarin.iOS/OpenTK-1.0.dll

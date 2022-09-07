@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+KIM5kDTqWr4QGTv3slyu6gDePT1qoW4wWlljracgSCDE0K+rsSwQfz2xELsI40tm0jV5mNzY8F8jGdpYkrI+A==",
+  "dgSpecHash": "4UF8oVeR0RCeU5i3nV3LBovWnTVAve7jT/L7k46wXQj24CMX2ppR8f3azD4AtbSZ1L/0AxcEqONcPjbtN/g/bA==",
   "success": true,
-  "projectFilePath": "/Users/benitkibabu/Documents/VSProject/MedicsVerse/MedicsVerse/MedicsVerse/MedicsVerse.csproj",
+  "projectFilePath": "/Users/benitkibabu/Documents/VSProject/medicsverse/MedicsVerse/MedicsVerse/MedicsVerse.csproj",
   "expectedPackageFiles": [
     "/Users/benitkibabu/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/Users/benitkibabu/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",

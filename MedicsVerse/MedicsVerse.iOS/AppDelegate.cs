@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using MedicsVerse.iOS.Properties;
 using UIKit;
 
 namespace MedicsVerse.iOS
@@ -24,6 +25,56 @@ namespace MedicsVerse.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
+
+            try
+            {
+                UIColor tintColor = UIColorExtensions.FromHexString("#33b960", 1.0f);
+
+                //Changes with iOS 13 or above
+                if (UIDevice.CurrentDevice.CheckSystemVersion(13, 0))
+                {
+
+                    var appearance = new UINavigationBarAppearance();
+                    appearance.ConfigureWithOpaqueBackground();
+                    appearance.BackgroundImage = new UIImage().ApplyTintColor(UIColor.Clear);
+                    appearance.BackgroundColor = tintColor;
+                    appearance.ShadowColor = UIColor.Clear;
+                    appearance.ShadowImage = new UIImage().ApplyTintColor(UIColor.Clear);
+
+                    appearance.TitleTextAttributes = new UIStringAttributes()
+                    {
+                        ForegroundColor = UIColor.White
+                    };
+
+                    UINavigationBar.Appearance.StandardAppearance = appearance;
+                    UINavigationBar.Appearance.CompactAppearance = UINavigationBar.Appearance.StandardAppearance;
+                    UINavigationBar.Appearance.ScrollEdgeAppearance = UINavigationBar.Appearance.StandardAppearance;
+                }
+                else
+                {
+                    UINavigationBar.Appearance.BarTintColor = tintColor;
+                    UINavigationBar.Appearance.TintColor = UIColor.Gray;
+                    UINavigationBar.Appearance.Translucent = false;
+                    UINavigationBar.Appearance.SetBackgroundImage(new UIImage(), UIBarPosition.Any, UIBarMetrics.Default);
+                    UINavigationBar.Appearance.ShadowImage = new UIImage();
+                    UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes()
+                    {
+                        ForegroundColor = UIColor.White
+                    };
+                }
+
+                var attribute = new UITextAttributes();
+                attribute.TextColor = UIColor.Clear;
+                UIBarButtonItem.Appearance.SetTitleTextAttributes(attribute, UIControlState.Normal);
+                UIBarButtonItem.Appearance.SetTitleTextAttributes(attribute, UIControlState.Highlighted);
+
+                UITabBar.Appearance.BackgroundImage = new UIImage();
+                UITabBar.Appearance.BackgroundColor = tintColor;
+                UITabBar.Appearance.ShadowImage = new UIImage();
+
+                UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
+            }
+            catch (Exception ex) { }
 
             return base.FinishedLaunching(app, options);
         }

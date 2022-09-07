@@ -1,3 +1,0 @@
-Target dependency graph (2 targets)
-MedicsVerse.iOS in MedicsVerse.iOS, no dependencies
-MedicsVerse.iOS in MedicsVerse.iOS, no dependencies

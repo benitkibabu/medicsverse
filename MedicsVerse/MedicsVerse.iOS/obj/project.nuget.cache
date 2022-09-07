@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wyEcEcd+l+mue1NLJVO5H6Xzfy/7gmpmmpe1wI4Wnvc6sN5JcB9NjPfI0xE8sXqh0D4R4Hy9otk3uOE6oXnGmQ==",
+  "dgSpecHash": "Tt+pa3fbCGU2B04tVXKRqqfn2e5gr+DdWeZ7ZMuD0e9bAXQughtga8lnEwhj9B6I47ypj1ifn8bA8b/jFmGYaQ==",
   "success": true,
-  "projectFilePath": "/Users/benitkibabu/Documents/VSProject/MedicsVerse/MedicsVerse/MedicsVerse.iOS/MedicsVerse.iOS.csproj",
+  "projectFilePath": "/Users/benitkibabu/Documents/VSProject/medicsverse/MedicsVerse/MedicsVerse.iOS/MedicsVerse.iOS.csproj",
   "expectedPackageFiles": [
     "/Users/benitkibabu/.nuget/packages/system.componentmodel/4.3.0/system.componentmodel.4.3.0.nupkg.sha512",
     "/Users/benitkibabu/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",

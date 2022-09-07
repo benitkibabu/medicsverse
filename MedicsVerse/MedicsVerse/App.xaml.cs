@@ -7,6 +7,7 @@ using MedicsVerse.Resx;
 using System.Collections.Generic;
 using Xamarin.Essentials;
 using MedicsVerse.Views.Logins;
+using MedicsVerse.Views.Starting;
 
 namespace MedicsVerse
 {
@@ -23,7 +24,7 @@ namespace MedicsVerse
 
             LoadStyles();
 
-            MainPage = new NavigationPage(new LoginPage());
+            MainPage = new NavigationPage(new SplashScreenPage());
         }
 
         protected override void OnStart()

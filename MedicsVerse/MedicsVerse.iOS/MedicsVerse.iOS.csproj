@@ -71,6 +71,9 @@
     <Compile Include="Renderers\CustomEntryRenderer.cs" />
     <Compile Include="Renderers\CustomLabelRenderer.cs" />
     <Compile Include="Renderers\CustomButtonRenderer.cs" />
+    <Compile Include="Renderers\CustomSearchBarRenderer.cs" />
+    <Compile Include="Renderers\CustomShellRenderer.cs" />
+    <Compile Include="Properties\UIColorExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
@@ -150,6 +153,30 @@
     <ImageAsset Include="Assets.xcassets\ic_app_logo.imageset\256.png" />
     <ImageAsset Include="Assets.xcassets\ic_app_logo.imageset\180.png" />
     <ImageAsset Include="Assets.xcassets\ic_app_logo.imageset\196.png" />
+    <ImageAsset Include="Assets.xcassets\ic_notifications.imageset\ic_notifications-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_notifications.imageset\ic_notifications-2.png" />
+    <ImageAsset Include="Assets.xcassets\ic_notifications.imageset\ic_notifications.png" />
+    <ImageAsset Include="Assets.xcassets\ic_notifications.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_home.imageset\ic_home-2.png" />
+    <ImageAsset Include="Assets.xcassets\ic_home.imageset\ic_home-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_home.imageset\ic_home.png" />
+    <ImageAsset Include="Assets.xcassets\ic_home.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_chat.imageset\ic_chat-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_chat.imageset\ic_chat-2.png" />
+    <ImageAsset Include="Assets.xcassets\ic_chat.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_chat.imageset\ic_chat.png" />
+    <ImageAsset Include="Assets.xcassets\ic_add_circle.imageset\ic_add_circle-2.png" />
+    <ImageAsset Include="Assets.xcassets\ic_add_circle.imageset\ic_add_circle-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_add_circle.imageset\ic_add_circle.png" />
+    <ImageAsset Include="Assets.xcassets\ic_add_circle.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_cases.imageset\ic_cases-2.png" />
+    <ImageAsset Include="Assets.xcassets\ic_cases.imageset\ic_cases-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_cases.imageset\ic_cases.png" />
+    <ImageAsset Include="Assets.xcassets\ic_cases.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_people_alt.imageset\ic_people_alt-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_people_alt.imageset\ic_people_alt-2.png" />
+    <ImageAsset Include="Assets.xcassets\ic_people_alt.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_people_alt.imageset\ic_people_alt.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
