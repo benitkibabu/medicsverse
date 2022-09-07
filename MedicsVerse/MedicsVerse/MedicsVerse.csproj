@@ -30,6 +30,7 @@
     <None Remove="Services\" />
     <None Remove="Models\" />
     <None Remove="Views\Starting\" />
+    <None Remove="ViewModels\Home\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Home\" />
@@ -48,6 +49,7 @@
     <Folder Include="Services\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Starting\" />
+    <Folder Include="ViewModels\Home\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Resx\StringRes.resx">

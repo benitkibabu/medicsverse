@@ -17,7 +17,7 @@
                   AutomationId="Aut_ToolbarGrid"
                   Margin="16,16,16,0"
                   xct:CornerRadiusEffect.CornerRadius="20"
-                  HeightRequest="60"
+                  HeightRequest="70"
                   BackgroundColor="{StaticResource AccentLight}">
 
                 <SearchBar x:Name="SearchField"
@@ -43,9 +43,9 @@
 
                 <xct:AvatarView x:Name="AvatarIcon"
                                 AutomationId="Aut_AvatarIcon"
-                                Text="MT"
+                                Text="{Binding LoggedInUser.Initials}"
                                 BorderColor="{StaticResource White}"
-                                Source="ic_person"
+                                Source="{Binding LoggedInUser.ImageUrl}"
                                 Margin="8"
                                 VerticalOptions="Center"
                                 HorizontalOptions="Center"
@@ -53,6 +53,156 @@
                                 HeightRequest="30"
                                 Grid.Column="2"/>
             </Grid>
+
+            <CollectionView ItemsSource="{Binding Posts}"
+                            Margin="16,8">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="0,8"
+                              RowSpacing="0"
+                              RowDefinitions="60,Auto,*">
+
+                            <Grid Grid.Row="0"
+                                  ColumnSpacing="0"
+                                  RowSpacing="0"
+                                  ColumnDefinitions="Auto,*,Auto"
+                                  RowDefinitions="Auto,16,16">
+
+                                <xct:AvatarView x:Name="PostAvatarIcon"
+                                                Grid.Column="0"
+                                                Grid.RowSpan="3"
+                                                AutomationId="Aut_PostAvatarIcon"
+                                                Text="{Binding User.Initials}"
+                                                BorderColor="{StaticResource White}"
+                                                Source="{Binding User.ImageUrl}"
+                                                Margin="8"
+                                                HeightRequest="40"
+                                                WidthRequest="40"
+                                                VerticalOptions="Start"
+                                                HorizontalOptions="Center"/>
+
+                                <Label Grid.Column="1"
+                                       Grid.Row="0"
+                                       TextColor="{StaticResource Black}">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{Binding User.FullName}"
+                                                  FontSize="{StaticResource Body} "
+                                                  FontAttributes="Bold" />
+                                            <Span Text="{Binding User.Rank}"
+                                                  FontSize="{StaticResource Small}"
+                                                  TextColor="{StaticResource Gray}" />
+                                        </FormattedString>
+                                    </Label.FormattedText>
+
+                                </Label>
+
+                                <Label Grid.Row="1"
+                                       Grid.Column="1"
+                                       Text="{Binding User.JobTitle}"
+                                       FontSize="{StaticResource Mini}"
+                                       TextColor="{StaticResource Gray}" />
+
+                                <Label Grid.Row="2"
+                                       Grid.Column="1"
+                                       Text="{Binding PostDateToDisplay}"
+                                       FontSize="{StaticResource Mini}"
+                                       TextColor="{StaticResource Gray}" />
+
+
+                                <Image Grid.RowSpan="3"
+                                       Grid.Column="2"
+                                       x:Name="MoreImageButton"
+                                       AutomationId="Aut_MoreImageButton"
+                                       Source="ic_more_horiz"
+                                       VerticalOptions="Start"
+                                       xct:IconTintColorEffect.TintColor="{StaticResource Gray}"
+                                       HeightRequest="32"
+                                       WidthRequest="32"/>
+                            </Grid>
+
+                            <Label Grid.Row="1"
+                                   Text="{Binding PostBody}"
+                                   Margin="0,8"
+                                   FontSize="{StaticResource Small}"
+                                   TextColor="{StaticResource Black}"/>
+
+                            <Grid Grid.Row="2">
+
+                                <Image xct:CornerRadiusEffect.CornerRadius="20"
+                                       Source="{Binding PostImageUrl}"
+                                       HeightRequest="200"
+                                       Aspect="AspectFill" />
+
+                                <panx:PancakeView BackgroundColor="#88000000"
+                                                  CornerRadius="0,0,20,20"
+                                                  VerticalOptions="End"
+                                                  HeightRequest="50">
+                                    <StackLayout Orientation="Horizontal"
+                                                 HorizontalOptions="FillAndExpand"
+                                                 Padding="8">
+
+                                        <ImageButton x:Name="CommentIconImage"
+                                               AutomationId="Aut_CommentIconImage"
+                                               Source="ic_chat"
+                                               BackgroundColor="Transparent"
+                                               xct:IconTintColorEffect.TintColor="{StaticResource White}"
+                                               HeightRequest="32"
+                                               WidthRequest="32"/>
+
+                                        <Label x:Name="CommentCountLabel"
+                                               AutomationId="Aut_CommentCountLabel"
+                                               Text="6"
+                                               VerticalOptions="Center"
+                                               FontAttributes="Bold"
+                                               FontSize="{StaticResource Small}"
+                                               TextColor="{StaticResource White}" />
+
+                                        <ImageButton x:Name="LikesIconImage"
+                                               AutomationId="Aut_LikesIconImage"
+                                               Source="ic_heart"
+                                               BackgroundColor="Transparent"
+                                               xct:IconTintColorEffect.TintColor="{StaticResource White}"
+                                               HeightRequest="32"
+                                               WidthRequest="32"/>
+
+                                        <Label x:Name="LikesCountLabel"
+                                               AutomationId="Aut_LikesCountLabel"
+                                               Text="34"
+                                               VerticalOptions="Center"
+                                               FontAttributes="Bold"
+                                               FontSize="{StaticResource Small}"
+                                               TextColor="{StaticResource White}" />
+
+
+                                        <ImageButton x:Name="ShareIconImage"
+                                               AutomationId="Aut_ShareIconImage"
+                                               Source="ic_share"
+                                               BackgroundColor="Transparent"
+                                               xct:IconTintColorEffect.TintColor="{StaticResource White}"
+                                               HorizontalOptions="EndAndExpand"
+                                               HeightRequest="32"
+                                               WidthRequest="32"/>
+
+                                        <ImageButton x:Name="BookmarkIconImage"
+                                               AutomationId="Aut_BookmarkIconImage"
+                                               Source="ic_bookmark"
+                                               BackgroundColor="Transparent"
+                                               xct:IconTintColorEffect.TintColor="{StaticResource White}"
+                                               HorizontalOptions="End"
+                                               HeightRequest="32"
+                                               WidthRequest="32"/>
+                                    </StackLayout>
+
+                                </panx:PancakeView>
+                            </Grid>
+                            
+
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
 
         </StackLayout>
     </ContentPage.Content>

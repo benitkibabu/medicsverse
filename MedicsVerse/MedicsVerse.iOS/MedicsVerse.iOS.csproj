@@ -177,6 +177,23 @@
     <ImageAsset Include="Assets.xcassets\ic_people_alt.imageset\ic_people_alt-2.png" />
     <ImageAsset Include="Assets.xcassets\ic_people_alt.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\ic_people_alt.imageset\ic_people_alt.png" />
+    <ImageAsset Include="Assets.xcassets\ic_more_horiz.imageset\ic_more_horiz-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_more_horiz.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_more_horiz.imageset\ic_more_horiz.png" />
+    <ImageAsset Include="Assets.xcassets\ic_heart.imageset\ic_heart.png" />
+    <ImageAsset Include="Assets.xcassets\ic_heart.imageset\ic_heart-2.png" />
+    <ImageAsset Include="Assets.xcassets\ic_heart.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_heart.imageset\ic_heart-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_bookmark_border.imageset\ic_bookmark_border.png" />
+    <ImageAsset Include="Assets.xcassets\ic_bookmark_border.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_bookmark.imageset\ic_bookmark-2.png" />
+    <ImageAsset Include="Assets.xcassets\ic_bookmark.imageset\ic_bookmark.png" />
+    <ImageAsset Include="Assets.xcassets\ic_bookmark.imageset\ic_bookmark-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_bookmark.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_share.imageset\ic_share.png" />
+    <ImageAsset Include="Assets.xcassets\ic_share.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_share.imageset\ic_share-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_share.imageset\ic_share-2.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
