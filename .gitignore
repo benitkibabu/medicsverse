@@ -1,3 +1,7 @@
 MedicsVerse/MedicsVerse/bin/
 MedicsVerse/MedicsVerse.Android/bin/
 MedicsVerse/MedicsVerse.iOS/bin/
+*.apk
+*.apk
+*.apk
+MedicsVerse/MedicsVerse.Android/bin/Debug/com.cedricm.medicsverse-Signed.apk
